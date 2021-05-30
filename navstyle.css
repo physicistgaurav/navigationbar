@@ -1,0 +1,117 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  background: url("/images/hell.jpg");
+  background-size: auto;
+}
+
+nav {
+  background-color: red;
+  height: 80px;
+  width: 100%;
+}
+
+label.logo {
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0, 100px;
+  font-weight: bold;
+  margin-left: 30px;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  font-family: "Ubuntu", sans-serif;
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: blue;
+  font-size: 20px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  margin: 8px;
+}
+
+a:hover,
+a.active {
+  background-color: whitesmoke;
+  transition: 0.5s;
+  color: black;
+  cursor: pointer;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+}
+
+#check {
+  display: none;
+}
+
+@media (max-width: 952px) {
+  label.logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 70px;
+    left: 0;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  a:hover,
+  a.active {
+    background: none;
+    color: white;
+    forced-color-adjust: blue;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
+
+section {
+  background: url("/images/hell.jpg");
+  background-size: cover;
+}
